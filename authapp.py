@@ -1,9 +1,10 @@
-from dash import Dash, html
+from dash import Dash, html, dcc
 
 app = Dash(__name__, update_title=None, suppress_callback_exceptions=True)
 
 app.layout = html.Div([
-    html.Div('hi')
+    html.Div('hi'),
+    dcc.Input()
 ])
 
 if __name__ == '__main__':
